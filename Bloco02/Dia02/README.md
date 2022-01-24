@@ -1,4 +1,4 @@
-# DIA 1
+# DIA 2
 
 O objetivo dos exercÃ­cios desse dia foi colocar em prÃ¡tica o que havia aprendido sobre HTML semÃ¢ntico. Para isso deveria a partir do cÃ³digo inicial abaixo, desenvolver uma pÃ¡gina que apresenta um dos animais mais impressionantes que existem: o (Stomatopoda)[https://www.nationalgeographic.com/science/phenomena/2014/07/03/natures-most-amazing-eyes-just-got-a-bit-weirder/]. Sendo que toda a estilizaÃ§Ã£o da pÃ¡gina ficou ao meu critÃ©rio.
 
