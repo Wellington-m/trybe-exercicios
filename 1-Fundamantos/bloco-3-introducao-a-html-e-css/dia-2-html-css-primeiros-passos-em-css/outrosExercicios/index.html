@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
     <style>
         body
         {
@@ -12,19 +13,29 @@
         {
             font-size: 65px;
             color: orange;
-            font-family: sans-serif;
+            /* font-family: sans-serif; */
+            font-family: 'Comforter', cursive;
         }
-        ul 
+        .listStyle 
         {
-            background-color: blue;
             font-style: italic;
             line-height: 30px;
             text-align: center;
             text-decoration: underline;
+            /* text-shadow: 2px 2px 5px blue; */
+            text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
         }
         .bgColorRed 
         {
             background-color: red;
+        }
+        .bgColorYellow
+        {
+          background-color: yellow;
+        }
+        .bgColorBrown
+        {
+          background-color: #964b00;
         }
         p 
         {
@@ -36,10 +47,10 @@
   <body>
     <h1>Exercícios 3.2</h1>
     <p class="bgColorRed">Qual é a sua cor favorita?</p>
-    <ul class="bgColorRed">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+    <ul class="listStyle">
+      <li class="bgColorYellow">Amarelo</li>
+      <li class="bgColorRed">Vermelho</li>
+      <li class="bgColorBrown">Marrom</li>
     </ul>
   </body>
 </html>
