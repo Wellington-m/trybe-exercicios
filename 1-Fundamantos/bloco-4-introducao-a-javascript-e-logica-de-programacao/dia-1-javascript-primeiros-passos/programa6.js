@@ -21,3 +21,7 @@ else if (peca.toLowerCase() === 'peão') {
     console.log("O peão movimenta-se apenas uma casa para frente e somente captura outras peças na diagonal. Opcionalmente, cada peão pode avançar duas casas no seu primeiro movimento do jogo."
     );
 }
+else
+{
+    console.log("Peça inválida");
+}
