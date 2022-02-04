@@ -1,6 +1,6 @@
 const alfa = 60;
-const beta = 60;
-const gama = 61;
+const beta = 70;
+const gama = 50;
 
 if(alfa <= 0 || beta <= 0 || gama <= 0)
 {
