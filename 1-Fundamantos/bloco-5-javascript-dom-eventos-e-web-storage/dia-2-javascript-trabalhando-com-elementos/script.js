@@ -27,3 +27,6 @@ section.appendChild(p);
 
 let section2 = createElementByClass("section", "left-content");
 main.appendChild(section2);
+
+let section3 = createElementByClass("section", "right-content");
+main.appendChild(section3);
