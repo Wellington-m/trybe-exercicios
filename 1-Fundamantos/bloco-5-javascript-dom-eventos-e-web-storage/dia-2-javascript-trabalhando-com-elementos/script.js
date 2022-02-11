@@ -12,6 +12,7 @@ function createElementByText(elementName, text) {
 let body = document.body;
 
 let h1 = createElementByText('h1', 'Exercício 5.2 - JavaScript DOM');
+h1.className = 'title';
 body.appendChild(h1);
 
 let main = createElementByClass('main', 'main-content');
@@ -47,6 +48,7 @@ let h3Text = ['Primeiro', 'segundo', 'terceiro'];
 for (const key in h3Text) {
     let h3Elemente = document.createElement('h3');
     h3Elemente.innerHTML= h3Text[key];
+    h3Elemente.className = 'description';
     main.appendChild(h3Elemente);
 }
 // for (let i = 0; i < h3Text.length; i+=1) {
@@ -54,3 +56,18 @@ for (const key in h3Text) {
 //     h3Elemente.innerHTML= h3Text[i];
 //     main.appendChild(h3Elemente)
 // }
+
+main.removeChild(section2);
+
+section3.style = 'margin-right: auto';
+
+main.style = 'background-Color: green';
+
+let removeList = document.querySelectorAll('section ul li');
+
+for (const key in removeList) {
+    if(removeList[key].innerText === 'nove' || removeList[key].innerText === 'dez')
+    {
+        removeList[key].remove();
+    }
+}
