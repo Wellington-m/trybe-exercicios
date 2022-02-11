@@ -24,3 +24,6 @@ main.appendChild(section);
 
 let p = createElementByText('p', "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.");
 section.appendChild(p);
+
+let section2 = createElementByClass("section", "left-content");
+main.appendChild(section2);
