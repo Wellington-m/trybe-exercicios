@@ -1,11 +1,9 @@
-function createElementByClass(elementName, className)
-{
+function createElementByClass(elementName, className) {
     let element = document.createElement(elementName);
     element.className = className;
     return element;
 }
-function createElementByText(elementName, text)
-{
+function createElementByText(elementName, text) {
     let element = document.createElement(elementName);
     element.innerText = text;
     return element;
@@ -35,3 +33,24 @@ let imagem = createElementByClass('img', 'small-image');
 imagem.src = 'https://picsum.photos/200';
 section2.appendChild(imagem);
 
+let ul = document.createElement('ul');
+section3.appendChild(ul);
+
+let list = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+for (let i = 0; i < list.length; i += 1) {
+    let listItens = document.createElement('li');
+    listItens.innerHTML = list[i];
+    section3.firstElementChild.appendChild(listItens);
+}
+
+let h3Text = ['Primeiro', 'segundo', 'terceiro'];
+for (const key in h3Text) {
+    let h3Elemente = document.createElement('h3');
+    h3Elemente.innerHTML= h3Text[key];
+    main.appendChild(h3Elemente);
+}
+// for (let i = 0; i < h3Text.length; i+=1) {
+//     let h3Elemente = document.createElement('h3');
+//     h3Elemente.innerHTML= h3Text[i];
+//     main.appendChild(h3Elemente)
+// }
