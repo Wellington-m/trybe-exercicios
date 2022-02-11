@@ -30,3 +30,8 @@ main.appendChild(section2);
 
 let section3 = createElementByClass("section", "right-content");
 main.appendChild(section3);
+
+let imagem = createElementByClass('img', 'small-image');
+imagem.src = 'https://picsum.photos/200';
+section2.appendChild(imagem);
+
