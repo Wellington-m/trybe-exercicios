@@ -1,0 +1,82 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: 'Supermercado One', cursive;
+}
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px 10px;
+}
+#header {
+    background-color: #350a08;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+#main {
+    background-color: #f8efed;
+}
+#footer {
+    background-color: #7f9de5;
+}
+.navigation {
+    background-color: #f5d2ed;
+    height: 20px;
+    position: relative;
+    top: 26px;
+    /* Na pagina estatica a soma do valor top com o height mais o conteudo que estiver em cima tem 
+    que dar o valor da altura do elemento pai para ficar alinhado no fundo 26 + 20 + 54 = 100 do header*/
+}
+.navigation li {
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+.navigation li a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 30px;
+}
+h2, h3 {
+    text-align: center;
+    font-size: 20px;
+}
+p {
+    padding: 10px;
+}
+#tableInformations {
+    margin: auto;
+    border-collapse: collapse; /*Elimina o espaço entre as célular fundindo as bordas em uma só*/    
+}
+#tableInformations th {
+    border: 1px solid black;
+    background: #F0FFF0;
+    
+}
+#tableInformations td {
+    border: 1px solid black;
+    padding: 10px;
+}
+section {
+    padding-top: 20px;
+}
+#references {
+    padding: 10px;
+    font-size: 20px;
+    
+}
+#references ul li a {
+    text-decoration: none;
+}
+#footer {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
