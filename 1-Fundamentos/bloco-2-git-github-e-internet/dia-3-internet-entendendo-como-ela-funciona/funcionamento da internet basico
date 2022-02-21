@@ -1,0 +1,9 @@
+1 - O navegador vai para o servidor de DNS e encontra o endereço IP do site.
+
+2 - O servidor DNS retorna a informação para o navegador.
+
+3 - O navegador manda uma mensagem de requisição HTTP para o servidor, pedindo que envie uma cópia do site ao cliente. Esta mensagem e todos os outros dados enviados entre o cliente e o servidor são enviados pela sua conexão à internet usando TCP/IP.
+
+4 - Se o servidor aprovar a requisição do cliente, o servidor enviará ao cliente uma mensagem "200 OK", que significa "Claro que você pode ver esse site!" e então começa a enviar os arquivos do site para o navegador como uma série de pequenos pedaços chamados pacotes de dados.
+
+5 - O navegador monta os pequenos pedaços em um site completo e o mostra a você.
