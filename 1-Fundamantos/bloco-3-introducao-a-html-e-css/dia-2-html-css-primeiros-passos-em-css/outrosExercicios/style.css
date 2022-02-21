@@ -1,0 +1,38 @@
+body
+        {
+          font-size: 16px;
+          background-color: burlywood;
+        }
+        h1 
+        {
+            font-size: 65px;
+            color: orange;
+            /* font-family: sans-serif; */
+            font-family: 'Comforter', cursive;
+        }
+        .listStyle 
+        {
+            font-style: italic;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: underline;
+            /* text-shadow: 2px 2px 5px blue; */
+            text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+        }
+        .bgColorRed 
+        {
+            background-color: red;
+        }
+        .bgColorYellow
+        {
+          background-color: yellow;
+        }
+        .bgColorBrown
+        {
+          background-color: #964b00;
+        }
+        p 
+        {
+          font-weight: 600;
+          font-size: 3em;
+        }
