@@ -124,11 +124,16 @@ function addTask(task) {
 
 addTask('Cozinhar');
 
+function selectedTask(element) {
+  element.target.classList.toggle('selected');
+}
+
 function colors(cor) {
   const taskContainer = document.querySelector('.my-tasks');
   const colorElement = document.createElement('div');
   colorElement.classList.add('task');
   colorElement.style.backgroundColor = cor;
+  colorElement.addEventListener('click', selectedTask);
   taskContainer.appendChild(colorElement);
 }
 
