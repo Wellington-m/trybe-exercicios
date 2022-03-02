@@ -25,6 +25,24 @@ function mouseLeave(e) {
   e.target.style.fontSize = '20px';
 }
 
+function defineTask(e) {
+  const taskSelected = document.querySelector('.selected');
+  if (taskSelected) {
+    console.log(e.target.style.color);
+    if (e.target.style.color) {
+      if (e.target.style.color === 'rgb(119, 119, 119)') {
+        e.target.style.color = taskSelected.style.backgroundColor;
+      }
+      else{
+        e.target.style.color = 'rgb(119, 119, 119)';
+      }   
+    }else{
+      e.target.style.color = taskSelected.style.backgroundColor;
+    }
+    // console.log(window.getComputedStyle(e.target).getPropertyValue('color'));   
+  }
+}
+
 const weekDay = document.querySelector('#days');
 
 for (let i = 0; i < dezDaysList.length; i += 1) {
@@ -36,6 +54,7 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
     dayItem.innerText = dezDaysList[i];
     dayItem.addEventListener('mouseenter', mouseEnter);
     dayItem.addEventListener('mouseleave', mouseLeave);
+    dayItem.addEventListener('click', defineTask);
     weekDay.appendChild(dayItem);
   }
 
