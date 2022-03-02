@@ -55,3 +55,12 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
       break;
   }
 }
+
+function holiday(Feriados) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const btn = document.createElement('button');
+  btn.innerText = 'Feriados';
+  btn.id = 'btn-holiday';
+  buttonsContainer.appendChild(btn);
+}
+holiday();
