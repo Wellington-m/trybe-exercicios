@@ -80,11 +80,31 @@ function holiday(holidays) {
 }
 holiday('Feriados');
 
+function btnfridays() {
+  const fridays = document.querySelectorAll('.friday');
+  
+  for (let i = 0; i < fridays.length; i+=1){
+
+    if (fridays[i].innerText === "Sextou!!!") {
+      const previousDayNumber = parseInt(fridays[i].previousElementSibling.innerText);
+      fridays[i].innerText = previousDayNumber + 1;
+      
+    }else{
+        fridays[i].innerText = "Sextou!!!";
+    }
+  }
+
+
+
+
+}
+
 function friday(fridays) {
   const buttonsContainer = document.querySelector('.buttons-container');
   const btn = document.createElement('button');
   btn.innerText = fridays;
   btn.id = 'btn-friday';
+  btn.addEventListener('click', btnfridays);
   buttonsContainer.appendChild(btn);
 }
 friday('Sexta-feira');
