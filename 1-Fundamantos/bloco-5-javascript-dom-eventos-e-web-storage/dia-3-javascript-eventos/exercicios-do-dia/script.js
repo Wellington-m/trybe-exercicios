@@ -56,11 +56,26 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
   }
 }
 
-function holiday(Feriados) {
+function btnFeriados() {
+  const holidaysList = document.querySelectorAll('.holiday');
+
+  for (let i = 0; i < holidaysList.length; i+=1) {
+
+    if (holidaysList[i].style.backgroundColor === 'rgb(127, 255, 0)') {
+      holidaysList[i].style.backgroundColor = 'rgb(238,238,238)';
+    }
+    else{
+      holidaysList[i].style.backgroundColor = 'rgb(127,255,0)';
+    }
+  }
+}
+
+function holiday(holidays) {
   const buttonsContainer = document.querySelector('.buttons-container');
   const btn = document.createElement('button');
-  btn.innerText = 'Feriados';
+  btn.innerText = holidays;
   btn.id = 'btn-holiday';
+  btn.addEventListener('click', btnFeriados);
   buttonsContainer.appendChild(btn);
 }
-holiday();
+holiday('Feriados');
