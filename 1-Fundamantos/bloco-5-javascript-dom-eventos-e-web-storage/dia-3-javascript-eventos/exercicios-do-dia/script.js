@@ -18,12 +18,10 @@ createDaysOfTheWeek();
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
 function mouseEnter(e) {
-  // console.log("Mouse entrou!!!!!!!!!!!");
   e.target.style.fontSize = '28px';
 }
 
 function mouseLeave(e) {
-  // console.log("Mouse Saiuuu!!!!!!!!!!!");
   e.target.style.fontSize = '20px';
 }
 
@@ -116,3 +114,12 @@ function friday(fridays) {
   buttonsContainer.appendChild(btn);
 }
 friday('Sexta-feira');
+
+function addTask(task) {
+  const taskContainer = document.querySelector('.my-tasks');
+  const taskElement = document.createElement('span');
+  taskElement.innerText = task;
+  taskContainer.appendChild(taskElement);
+}
+
+addTask('Cozinhar');
