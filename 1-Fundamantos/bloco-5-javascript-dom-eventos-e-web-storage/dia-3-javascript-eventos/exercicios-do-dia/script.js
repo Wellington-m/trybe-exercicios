@@ -28,7 +28,6 @@ function mouseLeave(e) {
 function defineTask(e) {
   const taskSelected = document.querySelector('.selected');
   if (taskSelected) {
-    console.log(e.target.style.color);
     if (e.target.style.color) {
       if (e.target.style.color === 'rgb(119, 119, 119)') {
         e.target.style.color = taskSelected.style.backgroundColor;
