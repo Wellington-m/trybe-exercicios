@@ -17,6 +17,16 @@ createDaysOfTheWeek();
 
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
+function mouseEnter(e) {
+  // console.log("Mouse entrou!!!!!!!!!!!");
+  e.target.style.fontSize = '28px';
+}
+
+function mouseLeave(e) {
+  // console.log("Mouse Saiuuu!!!!!!!!!!!");
+  e.target.style.fontSize = '20px';
+}
+
 const weekDay = document.querySelector('#days');
 
 for (let i = 0; i < dezDaysList.length; i += 1) {
@@ -26,6 +36,8 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
   function especialDate(className) {
     dayItem.classList.add(className);
     dayItem.innerText = dezDaysList[i];
+    dayItem.addEventListener('mouseenter', mouseEnter);
+    dayItem.addEventListener('mouseleave', mouseLeave);
     weekDay.appendChild(dayItem);
   }
 
@@ -93,10 +105,6 @@ function btnfridays() {
         fridays[i].innerText = "Sextou!!!";
     }
   }
-
-
-
-
 }
 
 function friday(fridays) {
