@@ -79,3 +79,12 @@ function holiday(holidays) {
   buttonsContainer.appendChild(btn);
 }
 holiday('Feriados');
+
+function friday(fridays) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const btn = document.createElement('button');
+  btn.innerText = fridays;
+  btn.id = 'btn-friday';
+  buttonsContainer.appendChild(btn);
+}
+friday('Sexta-feira');
