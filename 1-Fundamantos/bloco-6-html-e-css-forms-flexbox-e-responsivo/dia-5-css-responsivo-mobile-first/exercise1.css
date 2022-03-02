@@ -36,7 +36,9 @@
   }
   
   section {
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   figure {
@@ -46,4 +48,32 @@
   
   figcaption {
     font-size: .8em;
+  }
+
+  @media screen and (min-width: 720px) {
+      body{
+          background-color: azure;
+      }
+      section{
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      figure{
+          max-width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      img {
+        max-width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 1300px) {
+      body{
+          background-color: bisque;
+          max-width: 70%;
+          margin: 0 auto;
+      }
   }
