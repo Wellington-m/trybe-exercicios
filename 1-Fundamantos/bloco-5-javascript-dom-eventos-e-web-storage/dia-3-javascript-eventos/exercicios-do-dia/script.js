@@ -123,3 +123,13 @@ function addTask(task) {
 }
 
 addTask('Cozinhar');
+
+function colors(cor) {
+  const taskContainer = document.querySelector('.my-tasks');
+  const colorElement = document.createElement('div');
+  colorElement.classList.add('task');
+  colorElement.style.backgroundColor = cor;
+  taskContainer.appendChild(colorElement);
+}
+
+colors('rgb(255,165,0)');
