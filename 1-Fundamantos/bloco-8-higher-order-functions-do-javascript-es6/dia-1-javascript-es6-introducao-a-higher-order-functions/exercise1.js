@@ -15,7 +15,7 @@ const newEmployees = (callback) => {
 //4- A função que eu criar deve receber um nome completo como parâmetro
 //5- A função deve criar um e-mail no formato nome_da_pessoa@trybe.com
 
-function createEmail(fullName) {
+const createEmail = (fullName) => {
     const fullNameLower = fullName.toLowerCase().replace(' ', '_');
     const email = `${fullNameLower}@trybe.com`;
     return { fullName, email };
