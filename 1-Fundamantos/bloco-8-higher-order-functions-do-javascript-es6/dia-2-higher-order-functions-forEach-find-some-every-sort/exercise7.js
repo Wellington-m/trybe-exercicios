@@ -67,7 +67,11 @@ const books = [
 
 function authorUnique(array) {
   // escreva seu código aqui
-    array.forEach(element => {
-        
-    });
+    return array.every((element) => 
+            console.log("teste ",array.some((elementSome) => 
+                (elementSome.author.birthYear === element.author.birthYear)
+                && (elementSome.author.name !== element.author.name)
+            )))
 }
+
+authorUnique(books);
