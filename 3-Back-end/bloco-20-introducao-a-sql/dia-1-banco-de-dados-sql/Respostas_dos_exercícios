@@ -1,0 +1,10 @@
+Exercício 3:
+CREATE TABLE filme (  
+	filme_id int AUTO_INCREMENT PRIMARY KEY,
+	descricao varchar(100) NOT NULL,     
+	ano_lancamento int NOT NULL,     
+	nota int 
+	)
+	
+Exercício 5: Relacionamento de N:1
+
