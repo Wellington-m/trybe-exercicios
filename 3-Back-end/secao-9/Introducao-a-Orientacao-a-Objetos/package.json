@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npx ts-node src/student.ts",
     "test": "mocha --require ts-node/register --extensions ts --watch --watch-files src 'src/tests/**/*.ts'"
   },
   "keywords": [],
